@@ -91,7 +91,7 @@ GROUP BY location
 ORDER BY 4 DESC
 ```
 
-### Step 6) Likelihood of death if contracting COVID (method 2: summed new cases/deaths)
+### Step 6) Likelihood of death if contracting COVID (method 2: deaths/new cases)
 
 ```sql
 SELECT
@@ -285,23 +285,12 @@ This project enables analysis like:
 
 This analysis supports healthcare and policy decisions such as:
 
-✅ **Risk & Severity Monitoring**
-
 * compare mortality impact between regions
 * identify countries with higher case fatality indicators
-
-✅ **Public Health Reporting**
-
 * generate clean, reusable metrics for reporting dashboards
 * track infection spread as a share of population
-
-✅ **Vaccination Strategy Evaluation**
-
 * measure vaccination coverage growth over time
 * compare rollout speed between locations
-
-✅ **Analytics Engineering Readiness**
-
 * creates a reporting-friendly view (`PopulationVaccinated`)
 * makes metrics easier to reuse in BI tools and scheduled reporting
 
