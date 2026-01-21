@@ -248,7 +248,7 @@ CREATE VIEW PopulationVaccinated AS
         ,death.date
         ,death.population
         ,vaccin.new_vaccinations
-       ,SUM(CAST (vaccin.new_vaccinations AS INT)) OVER (
+        ,SUM(CAST (vaccin.new_vaccinations AS INT)) OVER (
             PARTITION by death.location
             ORDER BY death.location, death.date
         ) AS AccumulatedVaccin
